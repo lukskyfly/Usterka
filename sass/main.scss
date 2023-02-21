@@ -1,13 +1,31 @@
+@import 'colors';
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 }
 
 body {
-    position: relative;
-    font-family: 'Montserrat', sans-serif;
-    background-color: #444;
+	position: relative;
+	font-family: 'Montserrat', sans-serif;
+	background-color: #444;
+}
+nav {
+	text-transform: uppercase;
+
+	a, i {
+		color: $white-color;
+	}
+
+	a:hover {
+		color: $blue-color;
+	}
+    .navbat-brand{
+        font-weight: bold;
+    }
+    .active{
+        color: $blue-color;
+    }
 }

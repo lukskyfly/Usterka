@@ -10,4 +10,20 @@ body {
   position: relative;
   font-family: "Montserrat", sans-serif;
   background-color: #444;
+}
+
+nav {
+  text-transform: uppercase;
+}
+nav a, nav i {
+  color: #fff;
+}
+nav a:hover {
+  color: #039dff;
+}
+nav .navbat-brand {
+  font-weight: bold;
+}
+nav .active {
+  color: #039dff;
 }/*# sourceMappingURL=main.css.map */
