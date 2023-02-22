@@ -15,17 +15,57 @@ body {
 nav {
 	text-transform: uppercase;
 
-	a, i {
-		color: $white-color;
+	a,
+	i {
+		color: $black-color;
 	}
 
 	a:hover {
 		color: $blue-color;
 	}
-    .navbat-brand{
-        font-weight: bold;
-    }
-    .active{
-        color: $blue-color;
-    }
+	.navbat-brand {
+		font-weight: bold;
+	}
+	.active {
+		color: $blue-color;
+	}
+}
+header {
+	color: $white-color;
+	h1 {
+		text-transform: uppercase;
+	}
+	.hero-img {
+		position: relative;
+		height: 100vh;
+		background-image: url('../img/agd2.jpg');
+		background-position: center;
+		background-size: cover;
+		background-attachment: fixed;
+		z-index: -2;
+	}
+	.hero-shadow {
+		position: absolute;
+		width: 100%;
+		background-color: rgba(0, 0, 0, 2.8);
+		z-index: -10;
+	}
+	.hero-text {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		padding: 10px;
+		flex-direction: column;
+		height: 100%;
+		z-index: -5;
+	}
+}
+.blue-text {
+	color: $blue-color;
+}
+@media (min-width: 1200px) {
+	header .hero-img {
+		background-image: url('../img/agd1.jpg');
+	}
 }
