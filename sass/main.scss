@@ -12,13 +12,36 @@ body {
 	font-family: 'Montserrat', sans-serif;
 	background-color: #444;
 }
-.shadow-bg{
+.shadow-bg {
 	background-color: rgba(0, 0, 0, 0.8);
+}
+.underline {
+	width: 60px;
+	height: 3px;
+	background-color: $main-color;
+	margin: 0 auto;
+}
+main {
+	h2 {
+		text-align: center;
+		text-transform: uppercase;
+	}
+	.fas{
+		
+			padding: 1px;
+			font-size: 30px;
+		}
 	
+	.aboutus-card-title{
+		text-transform: uppercase;
+	}
+	.aboutus-card-text{
+		font-size: 14px;
+	}
 }
 nav {
 	text-transform: uppercase;
-	transition: background-color .6s;
+	transition: background-color 0.6s;
 	z-index: 1;
 	a,
 	i {
@@ -26,14 +49,14 @@ nav {
 	}
 
 	a:hover {
-		color: $blue-color;
+		color: $main-color;
 	}
 	.navbat-brand {
 		font-weight: bold;
 		padding: 1150px;
 	}
 	.active {
-		color: $blue-color;
+		color: $main-color;
 	}
 }
 header {
@@ -68,7 +91,7 @@ header {
 		z-index: 10;
 	}
 	.blue-text {
-		color: $blue-color;
+		color: $main-color;
 	}
 	.btn-outline-light {
 		text-transform: uppercase;
