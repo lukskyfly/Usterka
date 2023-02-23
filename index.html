@@ -17,15 +17,16 @@
 
 <body data-bs-spy="scroll" data-bs-target="#navbar">
 
-  <nav id="navbar" class="navbar navbar-expand-lg  position-fixed w-100 top-0">
+  <nav id="navbar" class="navbar navbar-expand-lg  position-fixed w-100 top-0 m-10 py-4">
     <div class="container">
-      <a class="navbar-brand" href="#"><i class="fa-solid fa-screwdriver-wrench"></i>Fixme</a>
+      <a class="navbar-brand" href="#"><i class="fa-solid fa-screwdriver-wrench"></i> Fixme</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
         aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <i class="fas fa-bars"></i>
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav ms-auto">
+
           <a class="nav-link active" href="#">Home</a>
           <a class="nav-link" href="#aboutus">O nas</a>
           <a class="nav-link" href="#portfolio">portfolio</a>
@@ -33,7 +34,7 @@
           <a class="nav-link" href="#team">zespół</a>
           <a class="nav-link" href="#achivements">osiągnięcia</a>
           <a class="nav-link" href="#contact">kontakt</a>
-
+          <a type="button" class="btn btn-primary" href="#prices">zamów serwisanta</a>
         </div>
       </div>
     </div>
@@ -43,15 +44,20 @@
       <div class="hero-shadow"></div>
       <div class="hero-text">
         <h1>witajcie w fix<span class="blue-text">me</span></h1>
-        <p>W miejscu, gdzie możesz zamówić seriwsanta</p>
+        <p>W miejscu, gdzie możesz zamówić fachowca</p>
+        <a href="#prices" type="button" class="btn btn-outline-light">poznaj nas</a>
       </div>
+      <a href="#prices"><i class="fas fa-chevron-down"></i></a>
     </div>
+
+
   </header>
   <div id="prices" style="height:100vh"></div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous">
     </script>
+    <script src="/js/script.js"></script>
 </body>
 
 </html>

@@ -12,18 +12,25 @@ body {
   background-color: #444;
 }
 
+.shadow-bg {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
 nav {
   text-transform: uppercase;
+  transition: background-color 0.6s;
+  z-index: 1;
 }
 nav a,
 nav i {
-  color: #000;
+  color: #fff;
 }
 nav a:hover {
   color: #039dff;
 }
 nav .navbat-brand {
   font-weight: bold;
+  padding: 1150px;
 }
 nav .active {
   color: #039dff;
@@ -42,13 +49,14 @@ header .hero-img {
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
-  z-index: -2;
+  z-index: 0;
 }
 header .hero-shadow {
   position: absolute;
   width: 100%;
-  background-color: rgb(0, 0, 0);
-  z-index: -10;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: -5;
 }
 header .hero-text {
   display: flex;
@@ -58,13 +66,39 @@ header .hero-text {
   padding: 10px;
   flex-direction: column;
   height: 100%;
-  z-index: -5;
+  z-index: 10;
 }
-
-.blue-text {
+header .blue-text {
   color: #039dff;
 }
+header .btn-outline-light {
+  text-transform: uppercase;
+}
+header .fa-chevron-down {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 20px;
+  font-size: 30px;
+  color: #fff;
+}
 
+@media (min-width: 375px) {
+  header h1 {
+    font-size: 36px;
+  }
+  header p {
+    font-size: 16px;
+  }
+}
+@media (min-width: 768px) {
+  header h1 {
+    font-size: 46px;
+  }
+  header p {
+    font-size: 26px;
+  }
+}
 @media (min-width: 1200px) {
   header .hero-img {
     background-image: url("../img/agd1.jpg");
