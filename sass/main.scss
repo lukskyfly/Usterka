@@ -26,16 +26,18 @@ main {
 		text-align: center;
 		text-transform: uppercase;
 	}
-	.fas{
-		
-			padding: 1px;
-			font-size: 30px;
-		}
-	
-	.aboutus-card-title{
+	.fas {
+		font-size: 30px;
+	}
+	.material-symbols-outlined {
+		font-size: 30px;
+		font-variation-settings: 'FILL' 0, 'wght' 700, 'GRAD' 100, 'opsz' 48;
+	}
+
+	.aboutus-card-title {
 		text-transform: uppercase;
 	}
-	.aboutus-card-text{
+	.aboutus-card-text {
 		font-size: 14px;
 	}
 }

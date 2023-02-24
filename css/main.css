@@ -28,8 +28,11 @@ main h2 {
   text-transform: uppercase;
 }
 main .fas {
-  padding: 1px;
   font-size: 30px;
+}
+main .material-symbols-outlined {
+  font-size: 30px;
+  font-variation-settings: "FILL" 0, "wght" 700, "GRAD" 100, "opsz" 48;
 }
 main .aboutus-card-title {
   text-transform: uppercase;
