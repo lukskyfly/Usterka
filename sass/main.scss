@@ -6,7 +6,9 @@
 	margin: 0;
 	padding: 0;
 }
-
+html{
+	scroll-padding-top: 88px;
+}
 body {
 	position: relative;
 	font-family: 'Montserrat', sans-serif;
@@ -21,6 +23,7 @@ body {
 	background-color: $main-color;
 	margin: 0 auto;
 }
+
 main {
 	h2 {
 		text-align: center;
@@ -39,6 +42,13 @@ main {
 	}
 	.aboutus-card-text {
 		font-size: 14px;
+	}
+	.aboutus-hover{
+		transition: color .6s;
+	}
+	.aboutus-hover:hover {
+		color: $main-color;
+		
 	}
 }
 nav {
