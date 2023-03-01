@@ -6,7 +6,7 @@
 	margin: 0;
 	padding: 0;
 }
-html{
+html {
 	scroll-padding-top: 88px;
 }
 body {
@@ -43,12 +43,11 @@ main {
 	.aboutus-card-text {
 		font-size: 14px;
 	}
-	.aboutus-hover{
-		transition: color .6s;
+	.aboutus-hover {
+		transition: color 0.6s;
 	}
 	.aboutus-hover:hover {
 		color: $main-color;
-		
 	}
 }
 nav {
@@ -164,8 +163,16 @@ header {
 		}
 	}
 }
+@media (min-width: 992px) {
+	nav {
+		height: 82px;
+	}
+}
 @media (min-width: 1200px) {
 	header .hero-img {
 		background-image: url('../img/agd1.jpg');
+	}
+	.hero-img {
+		background-image: url('../img/warsaw-961357_1920.jpg');
 	}
 }

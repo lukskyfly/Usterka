@@ -163,8 +163,16 @@ header .fa-chevron-down {
     font-size: 26px;
   }
 }
+@media (min-width: 992px) {
+  nav {
+    height: 82px;
+  }
+}
 @media (min-width: 1200px) {
   header .hero-img {
     background-image: url("../img/agd1.jpg");
+  }
+  .hero-img {
+    background-image: url("../img/warsaw-961357_1920.jpg");
   }
 }/*# sourceMappingURL=main.css.map */
