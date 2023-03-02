@@ -7,13 +7,12 @@
 }
 
 html {
-  scroll-padding-top: 88px;
+  scroll-padding-top: 82px;
 }
 
 body {
   position: relative;
   font-family: "Montserrat", sans-serif;
-  background-color: #444;
 }
 
 .shadow-bg {
@@ -145,6 +144,36 @@ header .fa-chevron-down {
   padding: 10px;
   flex-direction: column;
   z-index: 10;
+}
+
+.scrollToTop {
+  background: #ffffff;
+  border-radius: 50%;
+  bottom: 20px;
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.2);
+  color: #039dff;
+  display: none;
+  font-size: 34px;
+  height: 50px;
+  position: fixed;
+  right: 20px;
+  text-align: center;
+  width: 50px;
+  z-index: 99;
+}
+
+.hide {
+  display: inline;
+}
+
+.achievements span {
+  font-size: 48px;
+  color: #fff;
+  text-shadow: 0 0 5px #000;
+}
+.achievements .achievement-text {
+  font-size: 15px;
+  text-transform: uppercase;
 }
 
 @media (min-width: 375px) {

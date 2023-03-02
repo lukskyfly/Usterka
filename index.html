@@ -17,8 +17,7 @@
   <script src="https://kit.fontawesome.com/e8414fd81e.js" crossorigin="anonymous"></script>
 </head>
 
-<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-rootMargin="88">
-
+<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="82">
   <nav id="navbar" class="navbar navbar-expand-lg  position-fixed w-100 top-0 m-10 py-4">
     <div class="container">
       <a class="navbar-brand" href="#"><i class="fa-solid fa-screwdriver-wrench"></i> Fixme</a>
@@ -34,7 +33,7 @@
           <a class="nav-link" href="#portfolio">portfolio</a>
           <a class="nav-link" href="#prices">ceny</a>
           <a class="nav-link" href="#team">zespół</a>
-          <a class="nav-link" href="#achivements">osiągnięcia</a>
+          <a class="nav-link" href="#achievements">osiągnięcia</a>
           <a class="nav-link" href="#contact">kontakt</a>
           <a type="button" class="btn btn-primary" href="#contact">zamów serwisanta</a>
         </div>
@@ -95,77 +94,110 @@
 
       </div>
     </section>
-  </main>
+    <section id="achievements" class="achievements bg-light py-5 ">
+      <h2>osiągniecia</h2>
+      <div class="underline"></div>
+      <div class="container">
+        <div class="row achievements-list mt-5 text-center">
 
-  <section id="contact" class="contact">
-
-    <div class="hero-img">
-      <div class="hero-shadow">
-        <div class="hero-text m-5">
-          <h3>Wypełnij dane aby zamówić fachowca</h3>
-          <div class="container">
-            <form class="row g-3 was-validated">
-              <div class="col-sm-6 col-md-4">
-                <label for="validationServer01" class="form-label"></label>
-                <input type="text" pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{1,20}$" class="form-control is-valid"
-                  id="validationServer01" placeholder="Imię" required>
-              </div>
-              <div class="col-sm-6 col-md-4">
-                <label for="validationServer02" class="form-label"></label>
-                <input type="text" pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{1,20}$" class="form-control is-valid"
-                  id="validationServer02" placeholder="Nazwisko" required>
-              </div>
-              <div class="col-sm-6 col-md-4">
-                <label for="validationServerUsername" class="form-label"></label>
-                <label for="inputEmail4" class="form-label"></label>
-                <input type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" class="form-control is-valid"
-                  id="inputEmail4" placeholder="email" required>
-              </div>
-              <div class="col-sm-6 col-md-4">
-                <label for="validationServer01" class="form-label"></label>
-                <input type="numer" pattern="[5-9]{1}[0-9]{8}" class="form-control is-valid" id="validationServer01"
-                  placeholder="Telefon" required>
-              </div>
-              <div class="col-sm-6 col-md-4">
-                <label for="validationServer05" class="form-label"></label>
-                <input type="text" pattern="^\d{2}-\d{3}$" class="form-control is-invalid" id="validationServer05"
-                  aria-describedby="validationServer05Feedback" placeholder="Kod pocztowy" required></input>
-              </div>
-              <div class="col-sm-6 col-md-4">
-                <label class="form-label"></label>
-                <input type="text" pattern="^[a-zA-Z][a-zA-Z-_\.]{1,20}$" class="form-control is-valid "
-                  placeholder="Miasto" required></input>
-              </div>
-              <div class="col-sm-12 col-md-12">
-                <label class="form-label"></label>
-                <input type="text" pattern="^[a-zA-Z][a-zA-Z-_\.]{1,20}$" class="form-control is-valid "
-                  placeholder="Ulica" required></input>
-              </div>
-              <div class="col-sm-6 col-md-6">
-                <label class="form-label"></label>
-                <input type="text" pattern="^[0-9A-z]{1,20}$" class="form-control is-valid " placeholder="Numer domu"
-                  required></input>
-              </div>
-              <div class="col-sm-6 col-md-6">
-                <label class="form-label"></label>
-                <input type="text" pattern="^^[0-9A-z]{1,20}$" class="form-control is-valid "
-                  placeholder="Numer mieszkania"></input>
-              </div>
-              <div class="col-md-12 py-4">
-                <textarea class="form-control" rows="5" cols="12" mt-5 id="textAreaContent"
-                  placeholder="Opis usterki, marka model urządzenia" ></textarea>
-              </div>
-              <div class="col-md-12">
-                <button class="btn btn-primary" type="submit">Wyślij zgłoszenie</button>
-              </div>
+          <div class="col-sm-6 col-md-4 achievement p-4">
+            <span class="material-symbols-outlined">verified_user</span>
+            <p class="achievement-text">Gwarancja i ubezpieczenie OC</p>
           </div>
-
-          </form>
+          <div class="col-sm-6 col-md-4 achievement p-4">
+            <span class="material-symbols-outlined">thumb_up</span>
+            <p class="achievement-text">Świetne opinie klientów</p>
+          </div>
+          <div class="col-sm-6 col-md-4 achievement p-4">
+            <span class="material-symbols-outlined">savings</span>
+            <p class="achievement-text">Niska cena</p>
+          </div>
+          <div class="col-sm-6 col-md-4 achievement p-4">
+            <span class="material-symbols-outlined">payments</span>
+            <p class="achievement-text">Rożne formy płatności</p>
+          </div>
+          <div class="col-sm-6 col-md-4 achievement p-4">
+            <span class="material-symbols-outlined">person</span>
+            <p class="achievement-text">Wykfalifikowani pracownicy</p>
+          </div>
+          <div class="col-sm-6 col-md-4 achievement p-4">
+            <span class="material-symbols-outlined">security_update_good</span>
+            <p class="achievement-text">Rezerwacje online lub telefonicznie</p>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
+    <section id="contact" class="contact">
+      <div class="hero-img">
+        <div class="hero-shadow">
+          <div class="hero-text m-5">
+            <h3>Wypełnij dane aby zamówić fachowca</h3>
+            <div class="container">
+              <form class="row g-3 was-validated">
+                <div class="col-sm-6 col-md-4">
+                  <label for="validationServer01" class="form-label"></label>
+                  <input type="text" pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{1,20}$" class="form-control is-valid"
+                    id="validationServer01" placeholder="Imię" required>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                  <label for="validationServer02" class="form-label"></label>
+                  <input type="text" pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{1,20}$" class="form-control is-valid"
+                    id="validationServer02" placeholder="Nazwisko" required>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                  <label for="validationServerUsername" class="form-label"></label>
+                  <label for="inputEmail4" class="form-label"></label>
+                  <input type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" class="form-control is-valid"
+                    id="inputEmail4" placeholder="email" required>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                  <label for="validationServer01" class="form-label"></label>
+                  <input type="numer" pattern="[5-9]{1}[0-9]{8}" class="form-control is-valid" id="validationServer01"
+                    placeholder="Telefon" required>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                  <label for="validationServer05" class="form-label"></label>
+                  <input type="text" pattern="^\d{2}-\d{3}$" class="form-control is-invalid" id="validationServer05"
+                    aria-describedby="validationServer05Feedback" placeholder="Kod pocztowy" required></input>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                  <label class="form-label"></label>
+                  <input type="text" pattern="^[a-zA-Z][a-zA-Z-_\.]{1,20}$" class="form-control is-valid "
+                    placeholder="Miasto" required></input>
+                </div>
+                <div class="col-sm-12 col-md-12">
+                  <label class="form-label"></label>
+                  <input type="text" pattern="^[a-zA-Z][a-zA-Z-_\.]{1,20}$" class="form-control is-valid "
+                    placeholder="Ulica" required></input>
+                </div>
+                <div class="col-sm-6 col-md-6">
+                  <label class="form-label"></label>
+                  <input type="text" pattern="^[0-9A-z]{1,20}$" class="form-control is-valid " placeholder="Numer domu"
+                    required></input>
+                </div>
+                <div class="col-sm-6 col-md-6">
+                  <label class="form-label"></label>
+                  <input type="text" pattern="^^[0-9A-z]{1,20}$" class="form-control is-valid "
+                    placeholder="Numer mieszkania"></input>
+                </div>
+                <div class="col-md-12 py-4">
+                  <textarea class="form-control" rows="5" cols="12" mt-5 id="textAreaContent"
+                    placeholder="Opis usterki, marka model urządzenia" required></textarea>
+                </div>
+                <div class="col-md-12">
+                  <button class="btn btn-primary" type="submit">Wyślij zgłoszenie</button>
+                </div>
+            </div>
+            </form>
+  </main>
+  </div>
+  </div>
+  </div>
+  </section>
+  <a href="#home" class="scrollToTop">
+    <i class="fas fa-angle-up"></i>
+  </a>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous">

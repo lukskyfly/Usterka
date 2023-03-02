@@ -14,3 +14,12 @@ document.addEventListener('DOMContentLoaded', function () {
 	navList.forEach(item => item.addEventListener('click', () => navCollapse.classList.remove('show')))
 	window.addEventListener('scroll', addShadow)
 })
+const arrowUp = document.querySelector('.scrollToTop')
+function trackScroll() {
+	if (window.scrollY > 1000) {
+		arrowUp.classList.add('hide')
+	} else {
+		arrowUp.classList.remove('hide')
+	}
+}
+window.addEventListener('scroll', trackScroll)
