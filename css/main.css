@@ -13,6 +13,7 @@ html {
 body {
   position: relative;
   font-family: "Montserrat", sans-serif;
+  background-color: red;
 }
 
 .shadow-bg {
@@ -24,30 +25,6 @@ body {
   height: 3px;
   background-color: #039dff;
   margin: 0 auto;
-}
-
-main h2 {
-  text-align: center;
-  text-transform: uppercase;
-}
-main .fas {
-  font-size: 30px;
-}
-main .material-symbols-outlined {
-  font-size: 30px;
-  font-variation-settings: "FILL" 0, "wght" 700, "GRAD" 100, "opsz" 48;
-}
-main .aboutus-card-title {
-  text-transform: uppercase;
-}
-main .aboutus-card-text {
-  font-size: 14px;
-}
-main .aboutus-hover {
-  transition: color 0.6s;
-}
-main .aboutus-hover:hover {
-  color: #039dff;
 }
 
 nav {
@@ -117,7 +94,33 @@ header .fa-chevron-down {
   color: #fff;
 }
 
-.hero-img {
+main {
+  position: relative;
+}
+main h2 {
+  text-align: center;
+  text-transform: uppercase;
+}
+main .fas {
+  font-size: 48px;
+}
+main .material-symbols-outlined {
+  font-size: 30px;
+  font-variation-settings: "FILL" 0, "wght" 700, "GRAD" 100, "opsz" 48;
+}
+main .aboutus-card-title {
+  text-transform: uppercase;
+}
+main .aboutus-card-text {
+  font-size: 14px;
+}
+main .aboutus-hover {
+  transition: color 0.6s;
+}
+main .aboutus-hover:hover {
+  color: #039dff;
+}
+main .hero-img {
   position: relative;
   height: 100vh;
   background-image: url("../img/warsaw-961357_640.jpg");
@@ -126,16 +129,14 @@ header .fa-chevron-down {
   background-attachment: fixed;
   z-index: 0;
 }
-
-.hero-shadow {
+main .hero-shadow {
   position: absolute;
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.8);
   z-index: -5;
 }
-
-.hero-text {
+main .hero-text {
   display: flex;
   color: #fff;
   justify-content: center;
@@ -145,9 +146,59 @@ header .fa-chevron-down {
   flex-direction: column;
   z-index: 10;
 }
+main .achievements span {
+  font-size: 48px;
+  color: #fff;
+  text-shadow: 0 0 5px #000;
+}
+main .achievements .achievement-text {
+  font-size: 15px;
+  text-transform: uppercase;
+}
+main .map-contact {
+  position: relative;
+  width: 100%;
+  margin: 20px;
+}
+main .map {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #fff;
+  height: 300px;
+  width: 400px;
+  margin-right: 20px;
+}
+main .phone-email .blue-text {
+  color: #039dff;
+}
+main .phone-email h5,
+main .phone-email h4,
+main .phone-email p {
+  text-transform: uppercase;
+  font-style: 20px;
+  margin-top: 20px;
+  color: #fff;
+}
+main .phone-email .fab {
+  color: #fff;
+  font-size: 30px;
+  padding: 20px 30px;
+}
+main .phone-email .fab:hover {
+  color: #039dff;
+}
+main .phone-email a {
+  color: #fff;
+  font-size: 20px;
+  text-decoration: none;
+}
+main .phone-email a:hover {
+  color: #039dff;
+}
 
 .scrollToTop {
-  background: #ffffff;
+  color: #f5f5f5;
   border-radius: 50%;
   bottom: 20px;
   box-shadow: 0 16px 32px rgba(0, 0, 0, 0.2);
@@ -164,16 +215,6 @@ header .fa-chevron-down {
 
 .hide {
   display: inline;
-}
-
-.achievements span {
-  font-size: 48px;
-  color: #fff;
-  text-shadow: 0 0 5px #000;
-}
-.achievements .achievement-text {
-  font-size: 15px;
-  text-transform: uppercase;
 }
 
 @media (min-width: 375px) {

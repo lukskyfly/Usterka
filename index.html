@@ -52,11 +52,11 @@
     </div>
   </header>
   <main>
-    <section id="aboutus" class="aboutus bg-light py-5">
+    <section id="aboutus" class="aboutus bg-light">
       <div class="container">
-        <h2>O nas</h2>
+        <h2 class="pt-5">O nas</h2>
         <div class="underline"></div>
-        <div class="row mt-5">
+        <div class="row">
 
           <div class="col-sm-6 col-md-4 text-center p-5 aboutus-hover">
             <p><i class="fas fa-plug-circle-xmark"></i></p>
@@ -91,9 +91,9 @@
             <p class="aboutus-card-text">Naprawiamy wszystkie marki zmywarek</p>
           </div>
         </div>
-
       </div>
     </section>
+
     <section id="achievements" class="achievements bg-light py-5 ">
       <h2>osiągniecia</h2>
       <div class="underline"></div>
@@ -132,73 +132,102 @@
       <div class="hero-img">
         <div class="hero-shadow">
           <div class="hero-text m-5">
+            <h2>kontakt</h2>
+            <div class="underline mb-5"></div>
             <h3>Wypełnij dane aby zamówić fachowca</h3>
-            <div class="container">
-              <form class="row g-3 was-validated">
-                <div class="col-sm-6 col-md-4">
-                  <label for="validationServer01" class="form-label"></label>
-                  <input type="text" pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{1,20}$" class="form-control is-valid"
-                    id="validationServer01" placeholder="Imię" required>
-                </div>
-                <div class="col-sm-6 col-md-4">
-                  <label for="validationServer02" class="form-label"></label>
-                  <input type="text" pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{1,20}$" class="form-control is-valid"
-                    id="validationServer02" placeholder="Nazwisko" required>
-                </div>
-                <div class="col-sm-6 col-md-4">
-                  <label for="validationServerUsername" class="form-label"></label>
-                  <label for="inputEmail4" class="form-label"></label>
-                  <input type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" class="form-control is-valid"
-                    id="inputEmail4" placeholder="email" required>
-                </div>
-                <div class="col-sm-6 col-md-4">
-                  <label for="validationServer01" class="form-label"></label>
-                  <input type="numer" pattern="[5-9]{1}[0-9]{8}" class="form-control is-valid" id="validationServer01"
-                    placeholder="Telefon" required>
-                </div>
-                <div class="col-sm-6 col-md-4">
-                  <label for="validationServer05" class="form-label"></label>
-                  <input type="text" pattern="^\d{2}-\d{3}$" class="form-control is-invalid" id="validationServer05"
-                    aria-describedby="validationServer05Feedback" placeholder="Kod pocztowy" required></input>
-                </div>
-                <div class="col-sm-6 col-md-4">
-                  <label class="form-label"></label>
-                  <input type="text" pattern="^[a-zA-Z][a-zA-Z-_\.]{1,20}$" class="form-control is-valid "
-                    placeholder="Miasto" required></input>
-                </div>
-                <div class="col-sm-12 col-md-12">
-                  <label class="form-label"></label>
-                  <input type="text" pattern="^[a-zA-Z][a-zA-Z-_\.]{1,20}$" class="form-control is-valid "
-                    placeholder="Ulica" required></input>
-                </div>
-                <div class="col-sm-6 col-md-6">
-                  <label class="form-label"></label>
-                  <input type="text" pattern="^[0-9A-z]{1,20}$" class="form-control is-valid " placeholder="Numer domu"
-                    required></input>
-                </div>
-                <div class="col-sm-6 col-md-6">
-                  <label class="form-label"></label>
-                  <input type="text" pattern="^^[0-9A-z]{1,20}$" class="form-control is-valid "
-                    placeholder="Numer mieszkania"></input>
-                </div>
-                <div class="col-md-12 py-4">
-                  <textarea class="form-control" rows="5" cols="12" mt-5 id="textAreaContent"
-                    placeholder="Opis usterki, marka model urządzenia" required></textarea>
-                </div>
-                <div class="col-md-12">
-                  <button class="btn btn-primary" type="submit">Wyślij zgłoszenie</button>
-                </div>
-            </div>
+          </div>
+          <div class="container">
+            <form class="row g-3 was-validated">
+              <div class="col-sm-6 col-md-4">
+                <label for="validationServer01" class="form-label"></label>
+                <input type="text" pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{1,20}$" class="form-control is-valid"
+                  id="validationServer01" placeholder="Imię" required>
+              </div>
+              <div class="col-sm-6 col-md-4">
+                <label for="validationServer02" class="form-label"></label>
+                <input type="text" pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{1,20}$" class="form-control is-valid"
+                  id="validationServer02" placeholder="Nazwisko" required>
+              </div>
+              <div class="col-sm-6 col-md-4">
+                <label for="validationServerUsername" class="form-label"></label>
+                <label for="inputEmail4" class="form-label"></label>
+                <input type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" class="form-control is-valid"
+                  id="inputEmail4" placeholder="email" required>
+              </div>
+              <div class="col-sm-6 col-md-4">
+                <label for="validationServer01" class="form-label"></label>
+                <input type="numer" pattern="[5-9]{1}[0-9]{8}" class="form-control is-valid" id="validationServer01"
+                  placeholder="Telefon" required>
+              </div>
+              <div class="col-sm-6 col-md-4">
+                <label for="validationServer05" class="form-label"></label>
+                <input type="text" pattern="^\d{2}-\d{3}$" class="form-control is-invalid" id="validationServer05"
+                  aria-describedby="validationServer05Feedback" placeholder="Kod pocztowy" required></input>
+              </div>
+              <div class="col-sm-6 col-md-4">
+                <label class="form-label"></label>
+                <input type="text" pattern="^[a-zA-Z][a-zA-Z-_\.]{1,20}$" class="form-control is-valid "
+                  placeholder="Miasto" required></input>
+              </div>
+              <div class="col-sm-12 col-md-12">
+                <label class="form-label"></label>
+                <input type="text" pattern="^[a-zA-Z][a-zA-Z-_\.]{1,20}$" class="form-control is-valid "
+                  placeholder="Ulica" required></input>
+              </div>
+              <div class="col-sm-6 col-md-6">
+                <label class="form-label"></label>
+                <input type="text" pattern="^[0-9A-z]{1,20}$" class="form-control is-valid " placeholder="Numer domu"
+                  required></input>
+              </div>
+              <div class="col-sm-6 col-md-6">
+                <label class="form-label"></label>
+                <input type="text" pattern="^^[0-9A-z]{1,20}$" class="form-control is-valid "
+                  placeholder="Numer mieszkania"></input>
+              </div>
+              <div class="col-md-12 py-4">
+                <textarea class="form-control" rows="5" cols="12" mt-5 id="textAreaContent"
+                  placeholder="Opis usterki, marka model urządzenia" required></textarea>
+              </div>
+
+              <div class="col-md-12 text-center">
+                <button class="btn btn-primary" type="submit">Wyślij zgłoszenie</button>
+              </div>
             </form>
+
+            <div class="col-sm-2 col-lg-3 map-contact">
+              <div class="phone-email m-5">
+                <h4>Fix<span class="blue-text">Me</span></h4>
+                <p>ul. Instalatorów 5</p>
+                <p>02-237 Warszawa</p>
+                <a href="tel:+">TEL: 657983654</a><br>
+                <a href="mailto:fixmecontactcenter@gmail.com">EMAIL: fixmecontactcenter@gmail.com</a><br>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              </div>
+              <div id="map" class="map"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
   </main>
-  </div>
-  </div>
-  </div>
-  </section>
+
+
   <a href="#home" class="scrollToTop">
     <i class="fas fa-angle-up"></i>
   </a>
+  <footer class="bg-dark text-light py-4 text-center">
+    <p></p>&copy; 2023 | FixMe</p>
+  </footer>
 
+  <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAqdu06AWesyW2kkXVuvyRs7PgpHj0qYKw&callback=initMap&libraries=&v=weekly"
+    async></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous">
     </script>

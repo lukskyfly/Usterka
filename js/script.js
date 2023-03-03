@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
+	const navList = document.querySelectorAll('.nav-link')
 	const nav = document.querySelector('.navbar')
 	const navCollapse = document.querySelector('.navbar-collapse')
-	const navList = document.querySelectorAll('.nav-link')
 
 	function addShadow() {
 		if (window.scrollY >= 100) {
@@ -22,4 +22,19 @@ function trackScroll() {
 		arrowUp.classList.remove('hide')
 	}
 }
-window.addEventListener('scroll', trackScroll)
+window.addEventListener('scroll', trackScroll);
+let map
+function initMap() {
+	map = new google.maps.Map(document.querySelector('.map'), {
+		center: { lat: 52.19608, lng: 20.94954 },
+		zoom: 13,
+	})
+}
+marker = new google.maps.Marker({
+	position: { lat: 52.19608, lng: 20.94954 },
+	map,
+	title: 'Siedziba Firmy',
+})
+infowindow.open(map, marker)
+
+
