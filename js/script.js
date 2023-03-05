@@ -22,7 +22,7 @@ function trackScroll() {
 		arrowUp.classList.remove('hide')
 	}
 }
-window.addEventListener('scroll', trackScroll);
+window.addEventListener('scroll', trackScroll)
 let map
 function initMap() {
 	map = new google.maps.Map(document.querySelector('.map'), {
@@ -36,5 +36,3 @@ marker = new google.maps.Marker({
 	title: 'Siedziba Firmy',
 })
 infowindow.open(map, marker)
-
-

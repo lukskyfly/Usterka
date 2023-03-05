@@ -136,7 +136,7 @@ main .portfolio .carousel-indicators {
 }
 main .hero-img {
   position: relative;
-  height: 100vh;
+  height: 130vh;
   background-image: url("../img/warsaw-961357_640.jpg");
   background-position: center;
   background-size: cover;
@@ -174,7 +174,36 @@ main .map-contact {
   width: 100%;
   margin: 20px;
 }
-main .map {
+main .map-contact .phone-email .blue-text {
+  color: #039dff;
+}
+main .map-contact .phone-email h4 {
+  color: #fff;
+}
+main .map-contact .phone-email p {
+  text-transform: uppercase;
+  color: #fff;
+  text-decoration: none;
+}
+main .map-contact .phone-email .fab {
+  color: #fff;
+  font-size: 30px;
+  padding: 20px 30px;
+}
+main .map-contact .phone-email .fab:hover {
+  color: #039dff;
+}
+main .map-contact .phone-email a {
+  color: #fff;
+  font-size: 16px;
+  text-decoration: none;
+  margin-top: 20px;
+}
+main .map-contact .phone-email a:hover {
+  color: #039dff;
+}
+
+.map {
   position: absolute;
   top: 0;
   right: 0;
@@ -182,33 +211,6 @@ main .map {
   height: 300px;
   width: 400px;
   margin-right: 20px;
-}
-main .phone-email .blue-text {
-  color: #039dff;
-}
-main .phone-email h5,
-main .phone-email h4,
-main .phone-email p {
-  text-transform: uppercase;
-  font-style: 20px;
-  margin-top: 20px;
-  color: #fff;
-}
-main .phone-email .fab {
-  color: #fff;
-  font-size: 30px;
-  padding: 20px 30px;
-}
-main .phone-email .fab:hover {
-  color: #039dff;
-}
-main .phone-email a {
-  color: #fff;
-  font-size: 20px;
-  text-decoration: none;
-}
-main .phone-email a:hover {
-  color: #039dff;
 }
 
 .scrollToTop {
@@ -219,7 +221,7 @@ main .phone-email a:hover {
   color: #039dff;
   display: none;
   font-size: 34px;
-  height: 50px;
+  height: 40px;
   position: fixed;
   right: 20px;
   text-align: center;
