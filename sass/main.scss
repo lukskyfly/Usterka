@@ -12,7 +12,6 @@ html {
 body {
 	position: relative;
 	font-family: 'Montserrat', sans-serif;
-	background-color: red;
 }
 .shadow-bg {
 	background-color: rgba(0, 0, 0, 0.8);
@@ -95,8 +94,10 @@ main {
 		text-align: center;
 		text-transform: uppercase;
 	}
-	.fas {
-		font-size: 48px;
+	.aboutus {
+		.fas {
+			font-size: 40px;
+		}
 	}
 	.material-symbols-outlined {
 		font-size: 30px;
@@ -115,20 +116,63 @@ main {
 	.aboutus-hover:hover {
 		color: $main-color;
 	}
-	.portfolio{
-		.carousel-item{
+	.portfolio {
+		.carousel-item {
 			position: relative;
 			height: 700px;
 		}
-		.carousel-caption{
+		.carousel-caption {
 			position: absolute;
 			left: 0;
 			right: 0;
 			padding: 40px 0;
 			background-color: rgba(0, 0, 0, 0.4);
 		}
-		.carousel-indicators{
+		.carousel-indicators {
 			padding: 20px 0;
+		}
+	}
+	.prices {
+		.price-box {
+			height: 360px;
+			margin-top: 45px;
+			padding: 30px;
+			background-color: $white-color;
+			box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+			transition: transform 0.3s;
+			.fas {
+				font-size: 24px;
+			}
+			h3 {
+				color: $main-color;
+				text-transform: uppercase;
+				font-size: 26px;
+			}
+			span {
+				font-weight: bold;
+			}
+			i {
+				padding: 0 5px;
+				font-style: 24px;
+			}
+			a {
+				padding: 10px 20px;
+				text-transform: uppercase;
+			}
+			.price-tag {
+				font-weight: bold;
+				font-style: 30px;
+			}
+		}
+		.price-box:hover {
+			transform: scale(1.05);
+		}
+		.price-info {
+			margin-top: 30px;
+			a {
+				text-decoration: none;
+				font-weight: bold;
+			}
 		}
 	}
 	.hero-img {
@@ -176,20 +220,19 @@ main {
 			.blue-text {
 				color: $main-color;
 			}
-			h4{
+			h4 {
 				color: $white-color;
 			}
 			p {
 				text-transform: uppercase;
 				color: $white-color;
-		
+
 				text-decoration: none;
 			}
 			.fab {
 				color: $white-color;
 				font-size: 30px;
 				padding: 20px 30px;
-				
 			}
 			.fab:hover {
 				color: $main-color;
@@ -199,25 +242,23 @@ main {
 				font-size: 16px;
 				text-decoration: none;
 				margin-top: 20px;
-				
 			}
-			a:hover{
+			a:hover {
 				color: $main-color;
 			}
 		}
-		
 	}
-	}
-	.map {
-		position: absolute;
-		top: 0;
-		right: 0;
-		color: $white-color;
-		height: 300px;
-		width: 400px;
-		margin-right: 20px;
-	}
-	
+}
+.map {
+	position: absolute;
+	top: 0;
+	right: 0;
+	color: $white-color;
+	height: 300px;
+	width: 400px;
+	margin-right: 20px;
+}
+
 .scrollToTop {
 	color: #f5f5f5;
 	border-radius: 50%;
@@ -237,6 +278,16 @@ main {
 	display: inline;
 }
 
+@media (min-width: 320px) {
+	main {
+		.map {
+			display: none;
+		}
+		.hero-img {
+			height: 1225px;
+		}
+	}
+}
 @media (min-width: 375px) {
 	header {
 		h1 {
@@ -244,6 +295,11 @@ main {
 		}
 		p {
 			font-size: 16px;
+		}
+	}
+	main {
+		.map {
+			display: none;
 		}
 	}
 }

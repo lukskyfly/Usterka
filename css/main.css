@@ -13,7 +13,6 @@ html {
 body {
   position: relative;
   font-family: "Montserrat", sans-serif;
-  background-color: red;
 }
 
 .shadow-bg {
@@ -101,8 +100,8 @@ main h2 {
   text-align: center;
   text-transform: uppercase;
 }
-main .fas {
-  font-size: 48px;
+main .aboutus .fas {
+  font-size: 40px;
 }
 main .material-symbols-outlined {
   font-size: 30px;
@@ -133,6 +132,47 @@ main .portfolio .carousel-caption {
 }
 main .portfolio .carousel-indicators {
   padding: 20px 0;
+}
+main .prices .price-box {
+  height: 360px;
+  margin-top: 45px;
+  padding: 30px;
+  background-color: #fff;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s;
+}
+main .prices .price-box .fas {
+  font-size: 24px;
+}
+main .prices .price-box h3 {
+  color: #039dff;
+  text-transform: uppercase;
+  font-size: 26px;
+}
+main .prices .price-box span {
+  font-weight: bold;
+}
+main .prices .price-box i {
+  padding: 0 5px;
+  font-style: 24px;
+}
+main .prices .price-box a {
+  padding: 10px 20px;
+  text-transform: uppercase;
+}
+main .prices .price-box .price-tag {
+  font-weight: bold;
+  font-style: 30px;
+}
+main .prices .price-box:hover {
+  transform: scale(1.05);
+}
+main .prices .price-info {
+  margin-top: 30px;
+}
+main .prices .price-info a {
+  text-decoration: none;
+  font-weight: bold;
 }
 main .hero-img {
   position: relative;
@@ -233,12 +273,23 @@ main .map-contact .phone-email a:hover {
   display: inline;
 }
 
+@media (min-width: 320px) {
+  main .map {
+    display: none;
+  }
+  main .hero-img {
+    height: 1225px;
+  }
+}
 @media (min-width: 375px) {
   header h1 {
     font-size: 36px;
   }
   header p {
     font-size: 16px;
+  }
+  main .map {
+    display: none;
   }
 }
 @media (min-width: 768px) {
