@@ -119,14 +119,14 @@ main {
 	.portfolio {
 		.carousel-item {
 			position: relative;
-			height: 700px;
+			height: 600px;
 		}
 		.carousel-caption {
 			position: absolute;
 			left: 0;
 			right: 0;
 			padding: 40px 0;
-			background-color: rgba(0, 0, 0, 0.4);
+			background-color: rgba(0, 0, 0, .4);
 		}
 		.carousel-indicators {
 			padding: 20px 0;
@@ -134,7 +134,7 @@ main {
 	}
 	.prices {
 		.price-box {
-			height: 360px;
+			height: 400px;
 			margin-top: 45px;
 			padding: 30px;
 			background-color: $white-color;
@@ -146,7 +146,7 @@ main {
 			h3 {
 				color: $main-color;
 				text-transform: uppercase;
-				font-size: 26px;
+				font-size: 25px;
 			}
 			span {
 				font-weight: bold;
@@ -174,6 +174,7 @@ main {
 				font-weight: bold;
 			}
 		}
+	
 	}
 	.hero-img {
 		position: relative;
@@ -280,11 +281,26 @@ main {
 
 @media (min-width: 320px) {
 	main {
+		.hero-img {
+			height: 1225px;
+		}
+	}
+}
+@media (max-width: 992px) {
+	main {
 		.map {
 			display: none;
 		}
-		.hero-img {
-			height: 1225px;
+		.phone-email {
+			text-align: center;
+		}
+		.portfolio .carousel-caption {
+			display: none;
+		}
+		.carousel-caption {
+			span {
+				display: none;
+			}
 		}
 	}
 }
@@ -297,11 +313,15 @@ main {
 			font-size: 16px;
 		}
 	}
-	main {
-		.map {
-			display: none;
+}
+@media (max-width: 575px) {
+main{
+	.contact{
+		.hero-img{
+			height: 185vh;
 		}
 	}
+}
 }
 @media (min-width: 768px) {
 	header {
@@ -314,6 +334,9 @@ main {
 	}
 }
 @media (min-width: 992px) {
+	html {
+		scroll-padding-top: 88px;
+	}
 	nav {
 		height: 82px;
 	}

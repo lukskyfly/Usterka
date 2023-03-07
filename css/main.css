@@ -121,7 +121,7 @@ main .aboutus-hover:hover {
 }
 main .portfolio .carousel-item {
   position: relative;
-  height: 700px;
+  height: 600px;
 }
 main .portfolio .carousel-caption {
   position: absolute;
@@ -134,7 +134,7 @@ main .portfolio .carousel-indicators {
   padding: 20px 0;
 }
 main .prices .price-box {
-  height: 360px;
+  height: 400px;
   margin-top: 45px;
   padding: 30px;
   background-color: #fff;
@@ -147,7 +147,7 @@ main .prices .price-box .fas {
 main .prices .price-box h3 {
   color: #039dff;
   text-transform: uppercase;
-  font-size: 26px;
+  font-size: 25px;
 }
 main .prices .price-box span {
   font-weight: bold;
@@ -274,11 +274,22 @@ main .map-contact .phone-email a:hover {
 }
 
 @media (min-width: 320px) {
+  main .hero-img {
+    height: 1225px;
+  }
+}
+@media (max-width: 992px) {
   main .map {
     display: none;
   }
-  main .hero-img {
-    height: 1225px;
+  main .phone-email {
+    text-align: center;
+  }
+  main .portfolio .carousel-caption {
+    display: none;
+  }
+  main .carousel-caption span {
+    display: none;
   }
 }
 @media (min-width: 375px) {
@@ -288,8 +299,10 @@ main .map-contact .phone-email a:hover {
   header p {
     font-size: 16px;
   }
-  main .map {
-    display: none;
+}
+@media (max-width: 575px) {
+  main .contact .hero-img {
+    height: 185vh;
   }
 }
 @media (min-width: 768px) {
@@ -301,6 +314,9 @@ main .map-contact .phone-email a:hover {
   }
 }
 @media (min-width: 992px) {
+  html {
+    scroll-padding-top: 88px;
+  }
   nav {
     height: 82px;
   }
