@@ -126,7 +126,7 @@ main {
 			left: 0;
 			right: 0;
 			padding: 40px 0;
-			background-color: rgba(0, 0, 0, .4);
+			background-color: rgba(0, 0, 0, 0.4);
 		}
 		.carousel-indicators {
 			padding: 20px 0;
@@ -134,6 +134,7 @@ main {
 	}
 	.prices {
 		.price-box {
+			width: 300px;
 			height: 400px;
 			margin-top: 45px;
 			padding: 30px;
@@ -143,6 +144,9 @@ main {
 			.fas {
 				font-size: 24px;
 			}
+			.material-symbols-outlined {
+				font-size: 24px;
+			}
 			h3 {
 				color: $main-color;
 				text-transform: uppercase;
@@ -150,10 +154,10 @@ main {
 			}
 			span {
 				font-weight: bold;
+				font-size: 18px;
 			}
 			i {
 				padding: 0 5px;
-				font-style: 24px;
 			}
 			a {
 				padding: 10px 20px;
@@ -174,7 +178,17 @@ main {
 				font-weight: bold;
 			}
 		}
-	
+	}
+	.achievements {
+		span {
+			font-size: 48px;
+			color: $white-color;
+			text-shadow: 0 0 5px #000;
+		}
+		.achievement-text {
+			font-size: 15px;
+			text-transform: uppercase;
+		}
 	}
 	.hero-img {
 		position: relative;
@@ -202,21 +216,19 @@ main {
 		flex-direction: column;
 		z-index: 10;
 	}
-	.achievements {
-		span {
-			font-size: 48px;
-			color: $white-color;
-			text-shadow: 0 0 5px #000;
-		}
-		.achievement-text {
-			font-size: 15px;
-			text-transform: uppercase;
-		}
+	.form-control.is-invalid,
+	.was-validated .form-control:invalid {
+		background-image: none;
 	}
+	.form-control.is-invalid,
+	.was-validated .form-control:valid {
+		background-image: none;
+	}
+
 	.map-contact {
 		position: relative;
 		width: 100%;
-		margin: 20px;
+		margin: 20px 0;
 		.phone-email {
 			.blue-text {
 				color: $main-color;
@@ -249,15 +261,15 @@ main {
 			}
 		}
 	}
-}
-.map {
-	position: absolute;
-	top: 0;
-	right: 0;
-	color: $white-color;
-	height: 300px;
-	width: 400px;
-	margin-right: 20px;
+	.map {
+		position: absolute;
+		top: 0;
+		right: 0;
+		color: $white-color;
+		height: 300px;
+		width: 400px;
+		margin-right: 20px;
+	}
 }
 
 .scrollToTop {
@@ -315,14 +327,18 @@ main {
 	}
 }
 @media (max-width: 575px) {
-main{
-	.contact{
-		.hero-img{
-			height: 185vh;
+	main {
+		.contact {
+			.hero-img {
+				height: 185vh;
+			}
 		}
 	}
+	.scrollToTop {
+		display: none;
+	}
 }
-}
+
 @media (min-width: 768px) {
 	header {
 		h1 {

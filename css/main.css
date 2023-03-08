@@ -134,6 +134,7 @@ main .portfolio .carousel-indicators {
   padding: 20px 0;
 }
 main .prices .price-box {
+  width: 300px;
   height: 400px;
   margin-top: 45px;
   padding: 30px;
@@ -144,6 +145,9 @@ main .prices .price-box {
 main .prices .price-box .fas {
   font-size: 24px;
 }
+main .prices .price-box .material-symbols-outlined {
+  font-size: 24px;
+}
 main .prices .price-box h3 {
   color: #039dff;
   text-transform: uppercase;
@@ -151,10 +155,10 @@ main .prices .price-box h3 {
 }
 main .prices .price-box span {
   font-weight: bold;
+  font-size: 18px;
 }
 main .prices .price-box i {
   padding: 0 5px;
-  font-style: 24px;
 }
 main .prices .price-box a {
   padding: 10px 20px;
@@ -173,6 +177,15 @@ main .prices .price-info {
 main .prices .price-info a {
   text-decoration: none;
   font-weight: bold;
+}
+main .achievements span {
+  font-size: 48px;
+  color: #fff;
+  text-shadow: 0 0 5px #000;
+}
+main .achievements .achievement-text {
+  font-size: 15px;
+  text-transform: uppercase;
 }
 main .hero-img {
   position: relative;
@@ -200,19 +213,18 @@ main .hero-text {
   flex-direction: column;
   z-index: 10;
 }
-main .achievements span {
-  font-size: 48px;
-  color: #fff;
-  text-shadow: 0 0 5px #000;
+main .form-control.is-invalid,
+main .was-validated .form-control:invalid {
+  background-image: none;
 }
-main .achievements .achievement-text {
-  font-size: 15px;
-  text-transform: uppercase;
+main .form-control.is-invalid,
+main .was-validated .form-control:valid {
+  background-image: none;
 }
 main .map-contact {
   position: relative;
   width: 100%;
-  margin: 20px;
+  margin: 20px 0;
 }
 main .map-contact .phone-email .blue-text {
   color: #039dff;
@@ -242,8 +254,7 @@ main .map-contact .phone-email a {
 main .map-contact .phone-email a:hover {
   color: #039dff;
 }
-
-.map {
+main .map {
   position: absolute;
   top: 0;
   right: 0;
@@ -303,6 +314,9 @@ main .map-contact .phone-email a:hover {
 @media (max-width: 575px) {
   main .contact .hero-img {
     height: 185vh;
+  }
+  .scrollToTop {
+    display: none;
   }
 }
 @media (min-width: 768px) {
