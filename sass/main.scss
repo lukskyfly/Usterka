@@ -136,8 +136,8 @@ main {
 		.price-box {
 			width: 300px;
 			height: 400px;
-			margin-top: 45px;
-			padding: 30px;
+			margin: 60px 60px;
+			padding: 15px 30px;
 			background-color: $white-color;
 			box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
 			transition: transform 0.3s;
@@ -172,10 +172,48 @@ main {
 			transform: scale(1.05);
 		}
 		.price-info {
-			margin-top: 30px;
+			margin-bottom: 0;
+			padding-bottom: 12px;
 			a {
 				text-decoration: none;
 				font-weight: bold;
+			}
+		}
+	}
+	.team {
+		position: relative;
+		height: 100vh;
+		background-image: url('/img/office-space-1988480_1920.jpg');
+		background-position: center;
+		background-size: cover;
+		background-attachment: fixed;
+		z-index: 0;
+		.hero-shadow {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			background-color: rgba(0, 0, 0, 0.8);
+			z-index: -5;
+		}
+		.hero-text {
+			display: flex;
+			color: $white-color;
+			justify-content: center;
+			align-items: center;
+			text-align: center;
+			padding: 10px;
+			flex-direction: column;
+			z-index: 10;
+		}
+		.card {
+			.card-img-top {
+				height: 300px;
+				background-position: center;
+				background-size: cover;
+				background-attachment: fixed;
+			}
+			.card-title {
+				text-align: center;
 			}
 		}
 	}
@@ -190,128 +228,130 @@ main {
 			text-transform: uppercase;
 		}
 	}
-	.hero-img {
-		position: relative;
-		height: 130vh;
-		background-image: url('../img/warsaw-961357_640.jpg');
-		background-position: center;
-		background-size: cover;
-		background-attachment: fixed;
-		z-index: 0;
-	}
-	.hero-shadow {
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		background-color: rgba(0, 0, 0, 0.8);
-		z-index: -5;
-	}
-	.hero-text {
-		display: flex;
-		color: $white-color;
-		justify-content: center;
-		align-items: center;
-		text-align: center;
-		padding: 10px;
-		flex-direction: column;
-		z-index: 10;
-	}
-	.form-control.is-invalid,
-	.was-validated .form-control:invalid {
-		background-image: none;
-	}
-	.form-control.is-invalid,
-	.was-validated .form-control:valid {
-		background-image: none;
-	}
-
-	.map-contact {
-		position: relative;
-		width: 100%;
-		margin: 20px 0;
-		.phone-email {
-			.blue-text {
-				color: $main-color;
-			}
-			h4 {
-				color: $white-color;
-			}
-			p {
-				text-transform: uppercase;
-				color: $white-color;
-
-				text-decoration: none;
-			}
-			.fab {
-				color: $white-color;
-				font-size: 30px;
-				padding: 20px 30px;
-			}
-			.fab:hover {
-				color: $main-color;
-			}
-			a {
-				color: $white-color;
-				font-size: 16px;
-				text-decoration: none;
-				margin-top: 20px;
-			}
-			a:hover {
-				color: $main-color;
-			}
-		}
-	}
-	.map {
-		position: absolute;
-		top: 0;
-		right: 0;
-		color: $white-color;
-		height: 300px;
-		width: 400px;
-		margin-right: 20px;
-	}
-}
-
-.scrollToTop {
-	color: #f5f5f5;
-	border-radius: 50%;
-	bottom: 20px;
-	box-shadow: 0 16px 32px rgb(0 0 0 / 20%);
-	color: $main-color;
-	display: none;
-	font-size: 34px;
-	height: 40px;
-	position: fixed;
-	right: 20px;
-	text-align: center;
-	width: 50px;
-	z-index: 99;
-}
-.hide {
-	display: inline;
-}
-
-@media (min-width: 320px) {
-	main {
+	.contact {
 		.hero-img {
-			height: 1225px;
+			position: relative;
+			height: 100vh;
+			background-image: url('../img/warsaw-961357_640.jpg');
+			background-position: center;
+			background-size: cover;
+			background-attachment: fixed;
+			z-index: 0;
+		}
+		.hero-shadow {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			background-color: rgba(0, 0, 0, 0.8);
+			z-index: -5;
+		}
+		.hero-text {
+			display: flex;
+			color: $white-color;
+			justify-content: center;
+			align-items: center;
+			text-align: center;
+			padding: 10px;
+			flex-direction: column;
+			z-index: 10;
+		}
+		.form-control.is-invalid,
+		.was-validated .form-control:invalid {
+			background-image: none;
+		}
+		.form-control.is-invalid,
+		.was-validated .form-control:valid {
+			background-image: none;
+		}
+
+		.map-contact {
+			position: relative;
+			width: 100%;
+			margin: 20px 0;
+			.phone-email {
+				.blue-text {
+					color: $main-color;
+				}
+				h4 {
+					color: $white-color;
+				}
+				p {
+					text-transform: uppercase;
+					color: $white-color;
+
+					text-decoration: none;
+				}
+				.fab {
+					color: $white-color;
+					font-size: 30px;
+					padding: 20px 30px;
+				}
+				.fab:hover {
+					color: $main-color;
+				}
+				a {
+					color: $white-color;
+					font-size: 16px;
+					text-decoration: none;
+					margin-top: 20px;
+				}
+				a:hover {
+					color: $main-color;
+				}
+			}
+		}
+		.map {
+			position: absolute;
+			top: 0;
+			right: 0;
+			color: $white-color;
+			height: 300px;
+			width: 400px;
+			margin-right: 20px;
 		}
 	}
-}
-@media (max-width: 992px) {
-	main {
-		.map {
-			display: none;
+
+	.scrollToTop {
+		color: #f5f5f5;
+		border-radius: 50%;
+		bottom: 20px;
+		box-shadow: 0 16px 32px rgb(0 0 0 / 20%);
+		color: $main-color;
+		display: none;
+		font-size: 34px;
+		height: 50px;
+		position: fixed;
+		right: 20px;
+		text-align: center;
+		width: 50px;
+		z-index: 99;
+	}
+	.hide {
+		display: inline;
+	}
+
+	@media (min-width: 320px) {
+		main {
+			.hero-img {
+				height: 1225px;
+			}
 		}
-		.phone-email {
-			text-align: center;
-		}
-		.portfolio .carousel-caption {
-			display: none;
-		}
-		.carousel-caption {
-			span {
+	}
+	@media (max-width: 992px) {
+		main {
+			.map {
 				display: none;
+			}
+			.phone-email {
+				text-align: center;
+			}
+			.portfolio .carousel-caption {
+				display: none;
+			}
+			.carousel-caption {
+				span {
+					display: none;
+				}
 			}
 		}
 	}
