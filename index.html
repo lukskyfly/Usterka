@@ -13,11 +13,12 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
   <link rel="stylesheet" href="css/main.css">
   <script src="https://kit.fontawesome.com/e8414fd81e.js" crossorigin="anonymous"></script>
 </head>
 
-<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="82" class="bg-dark ">
+<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-rootMargin="82px 0 0" class="bg-dark ">
   <nav id="navbar" class="navbar navbar-expand-lg  position-fixed w-100 top-0 m-10 py-4">
     <div class="container">
       <a class="navbar-brand" href="#"><i class="fa-solid fa-screwdriver-wrench"></i> Fixme</a>
@@ -114,7 +115,7 @@
           </div>
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <img src="/img/oven-2618460_640.jpg" class="d-block w-100" alt="piekarnik">
+              <img src="./img/oven-2618460_640.jpg" class="d-block w-100" alt="piekarnik">
               <div class="carousel-caption d-none d-md-block">
                 <h5>Piekarniki</h5>
                 <p>Piekarniki wszystkich marek</p>
@@ -221,7 +222,7 @@
         </div>
       </div>
     </section>
-    <section id="team" class="team bg-dark">
+    <section id="team" class="team team-carousel bg-dark">
       <div class="hero-img">
         <div class="hero-shadow">
           <div class="hero-text">
@@ -245,10 +246,10 @@
               </div>
 
               <div class="card mx-3">
-                <img src="img/Hrka.jpg" class="card-img-top" alt="kobieta w koszuli">
+                <img src="img/woman-4702060_1280.jpg" class="card-img-top" alt="kobieta w koszuli">
                 <div class="card-body">
                   <h5 class="card-title">Hr</h5>
-                  <p class="card-text">Laura zajmuję rekrutowaniem naszych serwisantów.</p>
+                  <p class="card-text">Laura zajmuję się rekrutowaniem naszych serwisantów.</p>
                 </div>
                 <div class="card-footer d-flex justify-content-around">
                   <a href="#"><i class="fab fa-facebook-f"></i></a>
@@ -430,7 +431,7 @@
   </main>
 
 
- 
+
   <footer class="text-light py-4 text-center">
     <p></p>&copy; 2023 | FixMe</p>
   </footer>
@@ -439,9 +440,13 @@
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAqdu06AWesyW2kkXVuvyRs7PgpHj0qYKw&callback=initMap&libraries=&v=weekly"
     async></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous">
-    </script>
-  <script src="/js/script.js"></script>
+    integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+    crossorigin="anonymous"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="./js/settingsSlick.js"></script>
+  <script src="./js/script.js"></script>
 </body>
 
 </html>
