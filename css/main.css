@@ -186,21 +186,21 @@ main .prices .price-info a {
 }
 main .team {
   position: relative;
-  height: 80vh;
+  height: 100vh;
   background-image: url("../img/office-space-1988480_1920.jpg");
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
   z-index: 0;
 }
-main .team .hero-shadow {
+main .team .team-shadow {
   position: absolute;
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.8);
   z-index: -5;
 }
-main .team .hero-text {
+main .team .team-text {
   display: flex;
   color: #fff;
   justify-content: center;
@@ -214,7 +214,7 @@ main .team .card {
   transition: transform 0.3s;
 }
 main .team .card img {
-  height: 300px;
+  height: 200px;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -340,7 +340,7 @@ main .hide {
     height: 100vh;
   }
   main main .team .card {
-    height: 100vh;
+    height: 80px;
   }
   main main .team .hero-img {
     height: 100%;
@@ -370,7 +370,7 @@ main .hide {
   }
 }
 @media (max-width: 575px) {
-  .map-contact .scrollToTop {
+  .scrollToTop {
     display: none;
   }
 }
@@ -380,6 +380,11 @@ main .hide {
   }
   header p {
     font-size: 26px;
+  }
+}
+@media (min-width: 992px) {
+  nav {
+    height: 82px;
   }
 }
 @media (min-width: 1200px) {
