@@ -7,13 +7,12 @@
 }
 
 html {
-  height: 100%;
+  height: auto;
 }
 
 body {
   position: relative;
   font-family: "Montserrat", sans-serif;
-  height: 100%;
 }
 
 .shadow-bg {
@@ -189,6 +188,21 @@ main .prices .price-info a {
   text-decoration: none;
   font-weight: bold;
 }
+main .team {
+  position: relative;
+  background-image: url("../img/office-space-1988480_1920.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: 0;
+}
+main .team .team-shadow {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: -5;
+}
 main .team .team-text {
   display: flex;
   color: #fff;
@@ -236,7 +250,22 @@ main .achievements .achievement-text {
   font-size: 15px;
   text-transform: uppercase;
 }
-main .contact .hero-text {
+main .contact {
+  position: relative;
+  background-image: url("../img/warsaw-961357_640.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: 0;
+}
+main .contact .contact-shadow {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: -5;
+}
+main .contact .contact-text {
   display: flex;
   color: #fff;
   justify-content: center;
@@ -244,7 +273,7 @@ main .contact .hero-text {
   text-align: center;
   padding-top: 50px;
   flex-direction: column;
-  z-index: 10;
+  z-index: 1;
 }
 main .contact .form-control.is-invalid,
 main .contact .was-validated .form-control:invalid {
@@ -374,9 +403,6 @@ main .contact .map {
   main .portfolio .carousel-caption {
     display: none;
   }
-  main .carousel-caption span {
-    display: none;
-  }
   main .team .card-group {
     margin-top: 10px;
     display: flex;
@@ -391,10 +417,6 @@ main .contact .map {
   header p {
     font-size: 16px;
   }
-  main .contact .hero-shadow {
-    position: static;
-    height: 230vh;
-  }
 }
 @media (min-width: 768px) {
   header h1 {
@@ -403,30 +425,17 @@ main .contact .map {
   header p {
     font-size: 26px;
   }
-  main .contact .hero-shadow {
-    position: static;
-    height: 110vh;
-  }
 }
 @media (min-width: 992px) {
   nav {
     height: 82px;
-  }
-  main .contact .hero-shadow {
-    position: static;
-    height: 150vh;
-  }
-}
-@media (min-width: 1024px) {
-  main .contact .hero-shadow {
-    height: 90vh;
   }
 }
 @media (min-width: 1200px) {
   header .hero-img {
     background-image: url("../img/agd1.jpg");
   }
-  main .contact .hero-shadow {
-    height: 110vh;
+  main .hero-img {
+    background-image: url("../img/warsaw-961357_1920.jpg");
   }
 }/*# sourceMappingURL=main.css.map */

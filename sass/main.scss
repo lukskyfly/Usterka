@@ -7,12 +7,12 @@
 	padding: 0;
 }
 html {
-	height: 100%;
+	height: auto;
 }
 body {
 	position: relative;
 	font-family: 'Montserrat', sans-serif;
-	height: 100%;
+	// height: auto;
 }
 .shadow-bg {
 	background-color: rgba(0, 0, 0, 0.8);
@@ -185,21 +185,19 @@ main {
 		}
 	}
 	.team {
-		// position: relative;
-		// height: 100vh;
-		// background-image: url('../img/office-space-1988480_1920.jpg');
-		// background-position: center;
-		// background-size: cover;
-		// background-attachment: fixed;
-		// z-index: 0;
-
-		// .team-shadow {
-		// 	position: absolute;
-		// 	width: 100%;
-		// 	height: 100%;
-		// 	background-color: rgba(0, 0, 0, 0.8);
-		// 	z-index: -5;
-		// }
+		position: relative;
+		background-image: url('../img/office-space-1988480_1920.jpg');
+		background-size: cover;
+		background-attachment: fixed;
+		z-index: 0;
+		.team-shadow {
+			position: absolute;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			background-color: rgba(0, 0, 0, 0.8);
+			z-index: -5;
+		}
 		.team-text {
 			display: flex;
 			color: $white-color;
@@ -254,24 +252,20 @@ main {
 		}
 	}
 	.contact {
-		// .hero-img {
-		// 	position: relative;
-		// 	height: 130vh;
-		// 	background-image: url('../img/warsaw-961357_640.jpg');
-		// 	background-position: center;
-		// 	background-size: cover;
-		// 	background-attachment: fixed;
-		// 	z-index: 0;
-		// }
-		// .hero-shadow {
-		// 	padding-top: 82px;
-		// 	position: absolute;
-		// 	width: 100%;
-		// 	height: 100%;
-		// 	background-color: rgba(0, 0, 0, 0.8);
-		// 	z-index: -5;
-		// }
-		.hero-text {
+		position: relative;
+		background-image: url('../img/warsaw-961357_640.jpg');
+		background-size: cover;
+		background-attachment: fixed;
+		z-index: 0;
+		.contact-shadow {
+			position: absolute;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			background-color: rgba(0, 0, 0, 0.8);
+			z-index: -5;
+		}
+		.contact-text {
 			display: flex;
 			color: $white-color;
 			justify-content: center;
@@ -279,7 +273,7 @@ main {
 			text-align: center;
 			padding-top: 50px;
 			flex-direction: column;
-			z-index: 10;
+			z-index: 1;
 		}
 		.form-control.is-invalid,
 		.was-validated .form-control:invalid {
@@ -434,11 +428,11 @@ main {
 		.portfolio .carousel-caption {
 			display: none;
 		}
-		.carousel-caption {
-			span {
-				display: none;
-			}
-		}
+		// .carousel-caption {
+		// 	span {
+		// 		display: none;
+		// 	}
+		// }
 		.team {
 			.card-group {
 				margin-top: 10px;
@@ -460,12 +454,12 @@ main {
 		}
 	}
 	main {
-		.contact {
-			.hero-shadow {
-				position: static;
-				height: 230vh;
-			}
-		}
+		// .contact {
+		// 	.hero-shadow {
+		// 		position: static;
+		// 		height: 230vh;
+		// 	}
+		// }
 	}
 }
 @media (min-width: 768px) {
@@ -478,12 +472,12 @@ main {
 		}
 	}
 	main {
-		.contact {
-			.hero-shadow {
-				position: static;
-				height: 110vh;
-			}
-		}
+		// .contact {
+		// 	.hero-shadow {
+		// 		position: static;
+		// 		height: 110vh;
+		// 	}
+		// }
 	}
 }
 @media (min-width: 992px) {
@@ -492,34 +486,37 @@ main {
 	}
 	main {
 		.contact {
-			.hero-shadow {
-				position: static;
-				height: 150vh;
-			}
+			// .hero-shadow {
+			// 	position: static;
+			// 	height: 150vh;
+			// }
 		}
 	}
 }
 @media (min-width: 1024px) {
 	main {
-		.contact {
-			.hero-shadow {
-				height: 90vh;
-			}
-		}
+		// .contact {
+		// 	.hero-shadow {
+		// 		height: 90vh;
+		// 	}
+		// }
 	}
-}	
+}
 @media (min-width: 1200px) {
 	header .hero-img {
 		background-image: url('../img/agd1.jpg');
 	}
-	// .hero-img {
-	// 	background-image: url('../img/warsaw-961357_1920.jpg');
-	// }
 	main {
-		.contact {
-			.hero-shadow {
-				height: 110vh;
-			}
+		.hero-img {
+			background-image: url('../img/warsaw-961357_1920.jpg');
+			// height: 90vh;
 		}
+	}
+	main {
+		// .contact {
+		// 	.hero-shadow {
+		// 		height: 110vh;
+		// 	}
+		// }
 	}
 }
