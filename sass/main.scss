@@ -7,12 +7,11 @@
 	padding: 0;
 }
 html {
-	height: auto;
 }
 body {
 	position: relative;
 	font-family: 'Montserrat', sans-serif;
-	// height: auto;
+	background-color: #e7e7f4c6;
 }
 .shadow-bg {
 	background-color: rgba(0, 0, 0, 0.8);
@@ -273,7 +272,7 @@ main {
 			text-align: center;
 			padding-top: 50px;
 			flex-direction: column;
-			z-index: 1;
+			z-index: 10;
 		}
 		.form-control.is-invalid,
 		.was-validated .form-control:invalid {
@@ -361,18 +360,6 @@ main {
 			justify-content: space-between;
 		}
 	}
-	.contact {
-		.hero-img {
-			// display: none;
-		}
-		.hero-shadow {
-			position: static;
-			height: 280vh;
-			.map {
-				display: none;
-			}
-		}
-	}
 }
 
 @media (max-width: 575px) {
@@ -453,14 +440,6 @@ main {
 			font-size: 16px;
 		}
 	}
-	main {
-		// .contact {
-		// 	.hero-shadow {
-		// 		position: static;
-		// 		height: 230vh;
-		// 	}
-		// }
-	}
 }
 @media (min-width: 768px) {
 	header {
@@ -471,36 +450,13 @@ main {
 			font-size: 26px;
 		}
 	}
-	main {
-		// .contact {
-		// 	.hero-shadow {
-		// 		position: static;
-		// 		height: 110vh;
-		// 	}
-		// }
-	}
 }
 @media (min-width: 992px) {
 	nav {
 		height: 82px;
 	}
-	main {
-		.contact {
-			// .hero-shadow {
-			// 	position: static;
-			// 	height: 150vh;
-			// }
-		}
-	}
 }
 @media (min-width: 1024px) {
-	main {
-		// .contact {
-		// 	.hero-shadow {
-		// 		height: 90vh;
-		// 	}
-		// }
-	}
 }
 @media (min-width: 1200px) {
 	header .hero-img {
@@ -511,12 +467,5 @@ main {
 			background-image: url('../img/warsaw-961357_1920.jpg');
 			// height: 90vh;
 		}
-	}
-	main {
-		// .contact {
-		// 	.hero-shadow {
-		// 		height: 110vh;
-		// 	}
-		// }
 	}
 }

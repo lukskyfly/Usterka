@@ -6,13 +6,10 @@
   padding: 0;
 }
 
-html {
-  height: auto;
-}
-
 body {
   position: relative;
   font-family: "Montserrat", sans-serif;
+  background-color: rgba(231, 231, 244, 0.7764705882);
 }
 
 .shadow-bg {
@@ -273,7 +270,7 @@ main .contact .contact-text {
   text-align: center;
   padding-top: 50px;
   flex-direction: column;
-  z-index: 1;
+  z-index: 10;
 }
 main .contact .form-control.is-invalid,
 main .contact .was-validated .form-control:invalid {
@@ -355,13 +352,6 @@ main .contact .map {
     flex-wrap: wrap;
     text-align: center;
     justify-content: space-between;
-  }
-  .contact .hero-shadow {
-    position: static;
-    height: 280vh;
-  }
-  .contact .hero-shadow .map {
-    display: none;
   }
 }
 @media (max-width: 575px) {
