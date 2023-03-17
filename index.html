@@ -352,7 +352,7 @@
           <div class="col-sm-6 col-md-4">
             <label for="validationServerUsername" class="form-label"></label>
             <label for="inputEmail4" class="form-label"></label>
-            <input type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" class="form-control is-valid"
+            <input type="email" name="email" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" class="form-control is-valid"
               id="inputEmail4" placeholder="email" required>
           </div>
           <div class="col-sm-6 col-md-4">
@@ -386,11 +386,11 @@
               placeholder="Numer mieszkania"></input>
           </div>
           <div class="col-md-12 py-4">
-            <textarea class="form-control" rows="5" cols="12" mt-5 id="textAreaContent"
+            <textarea class="form-control" name='comment'id="comment" rows="5" cols="12" mt-5 id="textAreaContent"
               placeholder="Opis usterki, marka model urządzenia" required></textarea>
           </div>
           <div class="col-md-12 text-center">
-            <button class="btn btn-primary" type="submit">Wyślij zgłoszenie</button>
+            <input class="btn btn-primary" type="submit">Wyślij zgłoszenie</input>
           </div>
         </form>
 
