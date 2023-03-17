@@ -30,21 +30,21 @@ main {
 		color: $main-color;
 	}
 	span {
-        z-index: 20;
+		z-index: 20;
 		color: $white-color;
 		font-size: 25px;
 	}
-    a{
-        transition: color 0.5s;
-        text-decoration: none;
-        font-size: 22px;
-        color: $white-color;
-        display: block;
-        margin-top: 50px;
-    }
-    a:hover{
-        color: $main-color;
-    }
+	a {
+		transition: color 0.5s;
+		text-decoration: none;
+		font-size: 22px;
+		color: $white-color;
+		display: block;
+		margin-top: 50px;
+	}
+	a:hover {
+		color: $main-color;
+	}
 }
 .box {
 	position: absolute;
