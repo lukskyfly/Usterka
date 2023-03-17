@@ -390,9 +390,6 @@ main .contact .map {
   main .phone-email {
     text-align: center;
   }
-  main .portfolio .carousel-caption {
-    display: none;
-  }
   main .team .card-group {
     margin-top: 10px;
     display: flex;
