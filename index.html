@@ -339,6 +339,7 @@
       <div class="container">
         <form class="row g-3 was-validated" id="contactform"
           action="https://formsubmit.io/send/e74709da-dec5-4e3f-be6d-bbf9576887e7" method="POST">
+          <input name="_redirect" type="hidden" id="name" value="https://lukskyfly.github.io/Usterka/thanks.html">
           <div class="col-sm-6 col-md-4">
             <label for="validationServer01" class="form-label"></label>
             <input type="text" name="Imię" pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{1,20}$" class="form-control is-valid"
@@ -357,7 +358,7 @@
           </div>
           <div class="col-sm-6 col-md-4">
             <label for="validationServer01" class="form-label"></label>
-            <input type="numer" name="numer" pattern="[5-9]{1}[0-9]{8}" class="form-control is-valid"
+            <input type="numer" name="Numer telefonu" pattern="[5-9]{1}[0-9]{8}" class="form-control is-valid"
               id="validationServer01" placeholder="Telefon" required>
           </div>
           <div class="col-sm-6 col-md-4">
@@ -393,6 +394,7 @@
           <div class="col-md-12 text-center">
             <button class="btn btn-primary" type="submit">Wyślij zgłoszenie</button>
           </div>
+          <input name="_formsubmit_id" type="text" style="display:none">
         </form>
 
         <div class="col-sm-2 col-lg-3 map-contact">

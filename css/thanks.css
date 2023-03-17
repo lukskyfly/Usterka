@@ -1,0 +1,61 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  position: relative;
+  font-family: "Montserrat", sans-serif;
+}
+
+main {
+  background-image: url("../img/agd1.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: -5;
+  height: 100vh;
+}
+main .thanks-shadow {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 0;
+}
+main h2 {
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  color: #039dff;
+}
+main span {
+  z-index: 20;
+  color: #fff;
+  font-size: 25px;
+}
+main a {
+  transition: color 0.5s;
+  text-decoration: none;
+  font-size: 22px;
+  color: #fff;
+  display: block;
+  margin-top: 50px;
+}
+main a:hover {
+  color: #039dff;
+}
+
+.box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
+
+.blue-text {
+  color: #039dff;
+}/*# sourceMappingURL=thanks.css.map */
