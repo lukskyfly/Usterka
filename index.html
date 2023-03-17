@@ -338,7 +338,7 @@
       </div>
       <div class="container">
         <form class="row g-3 was-validated" id="contactform"
-          action="https://formsubmit.io/send/lukasz.grazda@gmail.com" method="POST">
+          action="https://formsubmit.io/send/e74709da-dec5-4e3f-be6d-bbf9576887e7" method="POST">
           <div class="col-sm-6 col-md-4">
             <label for="validationServer01" class="form-label"></label>
             <input type="text" name="Imię" pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{1,20}$" class="form-control is-valid"
@@ -352,45 +352,46 @@
           <div class="col-sm-6 col-md-4">
             <label for="validationServerUsername" class="form-label"></label>
             <label for="inputEmail4" class="form-label"></label>
-            <input type="email" name="email" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" class="form-control is-valid"
-              id="inputEmail4" placeholder="email" required>
+            <input type="email" name="email" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+              class="form-control is-valid" id="inputEmail4" placeholder="email" required>
           </div>
           <div class="col-sm-6 col-md-4">
             <label for="validationServer01" class="form-label"></label>
-            <input type="numer" pattern="[5-9]{1}[0-9]{8}" class="form-control is-valid" id="validationServer01"
-              placeholder="Telefon" required>
+            <input type="numer" name="numer" pattern="[5-9]{1}[0-9]{8}" class="form-control is-valid"
+              id="validationServer01" placeholder="Telefon" required>
           </div>
           <div class="col-sm-6 col-md-4">
             <label for="validationServer05" class="form-label"></label>
-            <input type="text" pattern="^\d{2}-\d{3}$" class="form-control is-invalid" id="validationServer05"
-              aria-describedby="validationServer05Feedback" placeholder="Kod pocztowy" required></input>
+            <input type="text" name="Kod pocztowy" pattern="^\d{2}-\d{3}$" class="form-control is-invalid"
+              id="validationServer05" aria-describedby="validationServer05Feedback" placeholder="Kod pocztowy"
+              required></input>
           </div>
           <div class="col-sm-6 col-md-4">
             <label class="form-label"></label>
-            <input type="text" pattern="^[a-zA-Z][a-zA-Z-_\.]{1,20}$" class="form-control is-valid "
+            <input type="text" name='Miasto' pattern="^[a-zA-Z][a-zA-Z-_\.]{1,20}$" class="form-control is-valid "
               placeholder="Miasto" required></input>
           </div>
           <div class="col-sm-12 col-md-12">
             <label class="form-label"></label>
-            <input type="text" pattern="^[a-zA-Z][a-zA-Z-_\.]{1,20}$" class="form-control is-valid " placeholder="Ulica"
-              required></input>
+            <input type="text" name="Ulica" pattern="^[a-zA-Z][a-zA-Z-_\.]{1,20}$" class="form-control is-valid "
+              placeholder="Ulica" required></input>
           </div>
           <div class="col-sm-6 col-md-6">
             <label class="form-label"></label>
-            <input type="text" pattern="^[0-9A-z]{1,20}$" class="form-control is-valid " placeholder="Numer domu"
-              required></input>
+            <input type="text" name="Numer domu" pattern="^[0-9A-z]{1,20}$" class="form-control is-valid "
+              placeholder="Numer domu" required></input>
           </div>
           <div class="col-sm-6 col-md-6">
             <label class="form-label"></label>
-            <input type="text" pattern="^^[0-9A-z]{1,20}$" class="form-control is-valid "
+            <input type="text" name="Numer mieszkania" pattern="^^[0-9A-z]{1,20}$" class="form-control is-valid "
               placeholder="Numer mieszkania"></input>
           </div>
           <div class="col-md-12 py-4">
-            <textarea class="form-control" name='comment'id="comment" rows="5" cols="12" mt-5 id="textAreaContent"
+            <textarea class="form-control" name='Opis usterki' id="comment" rows="5" cols="12" mt-5 id="textAreaContent"
               placeholder="Opis usterki, marka model urządzenia" required></textarea>
           </div>
           <div class="col-md-12 text-center">
-            <input class="btn btn-primary" type="submit">Wyślij zgłoszenie</input>
+            <button class="btn btn-primary" type="submit">Wyślij zgłoszenie</button>
           </div>
         </form>
 
