@@ -58,4 +58,31 @@ main a:hover {
 
 .blue-text {
   color: #039dff;
+}
+
+.footer {
+  height: 100px;
+  padding-top: 30px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+}
+
+@media (min-width: 320px) {
+  main h2 {
+    font-size: 20px;
+  }
+  main span,
+  main a {
+    font-size: 19px;
+  }
+}
+@media (min-width: 575px) {
+  main h2 {
+    font-size: 30px;
+  }
+  main span,
+  main a {
+    font-size: 25px;
+  }
 }/*# sourceMappingURL=thanks.css.map */

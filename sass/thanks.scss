@@ -56,3 +56,32 @@ main {
 .blue-text {
 	color: $main-color;
 }
+.footer {
+	height: 100px;
+	padding-top: 30px;
+	background-color: black;
+	color: $white-color;
+	text-align: center;
+}
+@media (min-width: 320px) {
+	main {
+		h2 {
+			font-size: 20px;
+		}
+		span,
+		a {
+			font-size: 19px;
+		}
+	}
+}
+@media (min-width: 575px) {
+	main {
+		h2 {
+			font-size: 30px;
+		}
+		span,
+		a {
+			font-size: 25px;
+		}
+	}
+}

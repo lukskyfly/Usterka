@@ -228,6 +228,9 @@ main .team .card .card-title {
 main .team .card i {
   padding: 5px 0px;
 }
+main .team .card .card-body {
+  height: 150px;
+}
 main .team .card .card-body p {
   font-size: 10;
 }
