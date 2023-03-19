@@ -325,6 +325,9 @@ main .contact .map {
   width: 400px;
   margin: auto;
 }
+main .mobile-img {
+  display: none;
+}
 
 .scrollToTop {
   color: #f5f5f5;
@@ -349,12 +352,6 @@ main .contact .map {
 @media (min-width: 320px) {
   .card-body {
     justify-content: center;
-  }
-  .card-body .card {
-    display: flex;
-    flex-wrap: wrap;
-    text-align: center;
-    justify-content: space-between;
   }
 }
 @media (max-width: 575px) {

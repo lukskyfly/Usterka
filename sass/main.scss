@@ -328,6 +328,9 @@ main {
 			margin: auto;
 		}
 	}
+	.mobile-img {
+		display: none;
+	}
 }
 .scrollToTop {
 	color: #f5f5f5;
@@ -347,16 +350,10 @@ main {
 .hide {
 	display: inline;
 }
+
 @media (min-width: 320px) {
 	.card-body {
 		justify-content: center;
-
-		.card {
-			display: flex;
-			flex-wrap: wrap;
-			text-align: center;
-			justify-content: space-between;
-		}
 	}
 }
 
@@ -410,14 +407,6 @@ main {
 		.phone-email {
 			text-align: center;
 		}
-		// .portfolio .carousel-caption {
-		// 	display: none;
-		// }
-		// .carousel-caption {
-		// 	span {
-		// 		display: none;
-		// 	}
-		// }
 		.team {
 			.card-group {
 				margin-top: 10px;
@@ -463,7 +452,6 @@ main {
 	main {
 		.hero-img {
 			background-image: url('../img/warsaw-961357_1920.jpg');
-			// height: 90vh;
 		}
 	}
 }
