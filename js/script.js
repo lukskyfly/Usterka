@@ -23,16 +23,18 @@ function trackScroll() {
 	}
 }
 window.addEventListener('scroll', trackScroll)
-let map
 function initMap() {
-	map = new google.maps.Map(document.querySelector('.map'), {
-		center: { lat: 52.19608, lng: 20.94954 },
-		zoom: 13,
-	})
-}
-marker = new google.maps.Marker({
-	position: { lat: 52.19608, lng: 20.94954 },
-	map,
-	title: 'Siedziba Firmy',
-})
-infowindow.open(map, marker)
+	const myLatLng = { lat: 52.19608, lng: 20.94954};
+	const map = new google.maps.Map(document.getElementById("map"), {
+	  zoom: 13,
+	  center: myLatLng,
+	});
+  
+	new google.maps.Marker({
+	  position: myLatLng,
+	  map,
+	  title: "Hello World!",
+	});
+  }
+  
+  window.initMap = initMap;

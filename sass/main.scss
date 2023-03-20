@@ -328,9 +328,9 @@ main {
 			margin: auto;
 		}
 	}
-	.mobile-img {
-		display: none;
-	}
+	// .mobile-img {
+	// 	display: none;
+	// }
 }
 .scrollToTop {
 	color: #f5f5f5;
@@ -352,8 +352,16 @@ main {
 }
 
 @media (min-width: 320px) {
-	.card-body {
-		justify-content: center;
+	main {
+		.portfolio {
+			.mobile-img {
+				background-image: url('/img/oven-smal.jpg');
+				height: 400px;
+				width: 300px;
+				margin: auto;
+				object-fit: cover;
+			}
+		}
 	}
 }
 
@@ -397,6 +405,16 @@ main {
 			}
 		}
 	}
+	main {
+		.portfolio {
+			.mobile-img {
+				background-image: url('/img/oven-2618460_640.jpg');
+				object-fit: cover;
+				height: 400px;
+				width: 570px;
+			}
+		}
+	}
 }
 
 @media (max-width: 992px) {
@@ -437,10 +455,23 @@ main {
 			font-size: 26px;
 		}
 	}
+	main {
+		.portfolio {
+			.mobile-img {
+				height: 400px;
+				width: 700px;
+			}
+		}
+	}
 }
 @media (min-width: 992px) {
 	nav {
 		height: 82px;
+	}
+	main {
+		.mobile-img {
+			display: none;
+		}
 	}
 }
 @media (min-width: 1024px) {

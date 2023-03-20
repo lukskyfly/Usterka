@@ -325,9 +325,6 @@ main .contact .map {
   width: 400px;
   margin: auto;
 }
-main .mobile-img {
-  display: none;
-}
 
 .scrollToTop {
   color: #f5f5f5;
@@ -350,8 +347,13 @@ main .mobile-img {
 }
 
 @media (min-width: 320px) {
-  .card-body {
-    justify-content: center;
+  main .portfolio .mobile-img {
+    background-image: url("/img/oven-smal.jpg");
+    height: 400px;
+    width: 300px;
+    margin: auto;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 }
 @media (max-width: 575px) {
@@ -381,6 +383,13 @@ main .mobile-img {
   }
   .team .card-group .card p .card-text {
     font-size: 5px;
+  }
+  main .portfolio .mobile-img {
+    background-image: url("/img/oven-2618460_640.jpg");
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: 400px;
+    width: 570px;
   }
 }
 @media (max-width: 992px) {
@@ -412,10 +421,17 @@ main .mobile-img {
   header p {
     font-size: 26px;
   }
+  main .portfolio .mobile-img {
+    height: 400px;
+    width: 700px;
+  }
 }
 @media (min-width: 992px) {
   nav {
     height: 82px;
+  }
+  main .mobile-img {
+    display: none;
   }
 }
 @media (min-width: 1200px) {
