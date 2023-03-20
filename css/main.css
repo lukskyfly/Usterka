@@ -348,7 +348,7 @@ main .contact .map {
 
 @media (min-width: 320px) {
   main .portfolio .mobile-img {
-    background-image: url("img/oven-smal.jpg");
+    background-image: url("/img/oven-smal.jpg");
     height: 400px;
     width: 300px;
     margin: auto;
