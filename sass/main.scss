@@ -48,7 +48,7 @@ header {
 	.hero-img {
 		position: relative;
 		height: 100vh;
-		background-image: url('../img/agd2.jpg');
+		background-image: url('../img/agd1.jpg');
 		background-position: center;
 		background-size: cover;
 		background-attachment: fixed;
@@ -183,7 +183,7 @@ main {
 	}
 	.team {
 		position: relative;
-		background-image: url('img/office-space-1988480_1920.jpg');
+		background-image: url('../img/office-space-1988480_1920.jpg');
 		background-size: cover;
 		background-attachment: fixed;
 		z-index: 0;
@@ -251,7 +251,7 @@ main {
 	}
 	.contact {
 		position: relative;
-		background-image: url('img/warsaw-961357_640.jpg');
+		background-image: url('../img/warsaw-961357_640.jpg');
 		background-size: cover;
 		background-attachment: fixed;
 		z-index: 0;
@@ -355,7 +355,7 @@ main {
 	main {
 		.portfolio {
 			.mobile-img {
-				background-image: url('/img/oven-smal.jpg');
+				background-image: url('../img/oven-smal.jpg');
 				height: 400px;
 				width: 300px;
 				margin: auto;
@@ -408,7 +408,7 @@ main {
 	main {
 		.portfolio {
 			.mobile-img {
-				background-image: url('/img/oven-2618460_640.jpg');
+				background-image: url('../img/oven-2618460_640.jpg');
 				object-fit: cover;
 				height: 400px;
 				width: 570px;
@@ -478,11 +478,11 @@ main {
 }
 @media (min-width: 1200px) {
 	header .hero-img {
-		background-image: url('img/agd1.jpg');
+		background-image: url('../img/agd2.jpg');
 	}
 	main {
 		.hero-img {
-			background-image: url('img/warsaw-961357_1920.jpg');
+			background-image: url('..img/warsaw-961357_1920.jpg');
 		}
 	}
 }
