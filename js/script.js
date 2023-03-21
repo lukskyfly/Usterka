@@ -23,6 +23,7 @@ function trackScroll() {
 	}
 }
 window.addEventListener('scroll', trackScroll)
+
 function initMap() {
 	const myLatLng = { lat: 52.19608, lng: 20.94954};
 	const map = new google.maps.Map(document.getElementById("map"), {
@@ -33,7 +34,7 @@ function initMap() {
 	new google.maps.Marker({
 	  position: myLatLng,
 	  map,
-	  title: "Hello World!",
+	  title: "Adres Biura",
 	});
   }
   
