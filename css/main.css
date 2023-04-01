@@ -141,7 +141,7 @@ main h2 {
   text-transform: uppercase;
 }
 main .aboutus {
-  padding-top: 82px;
+  padding-top: 42px;
 }
 main .aboutus .fas {
   font-size: 40px;
@@ -163,7 +163,7 @@ main .aboutus-hover:hover {
   color: #039dff;
 }
 main .portfolio {
-  padding-top: 82px;
+  padding-top: 42px;
 }
 main .portfolio .carousel-item {
   position: relative;
@@ -180,7 +180,7 @@ main .portfolio .carousel-indicators {
   padding: 20px 0;
 }
 main .prices {
-  padding-top: 82px;
+  padding-top: 42px;
 }
 main .prices .price-box {
   width: 300px;
@@ -196,6 +196,9 @@ main .prices .price-box .fas {
 }
 main .prices .price-box .material-symbols-outlined {
   font-size: 24px;
+}
+main .prices .price-box h2 {
+  padding-top: 82px;
 }
 main .prices .price-box h3 {
   color: #039dff;
@@ -229,6 +232,7 @@ main .prices .price-info a {
   font-weight: bold;
 }
 main .team {
+  padding-top: 42px;
   position: relative;
   background-image: url("../img/office-space-1988480_1920.jpg");
   background-size: cover;
@@ -284,6 +288,9 @@ main .team .card-group {
   display: flex;
   flex-wrap: wrap;
 }
+main .achievements {
+  padding-top: 42px;
+}
 main .achievements span {
   font-size: 48px;
   color: #fff;
@@ -294,6 +301,7 @@ main .achievements .achievement-text {
   text-transform: uppercase;
 }
 main .contact {
+  padding-top: 32px;
   position: relative;
   background-image: url("../img/warsaw-961357_640.jpg");
   background-size: cover;

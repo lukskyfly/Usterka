@@ -94,7 +94,7 @@ main {
 		text-transform: uppercase;
 	}
 	.aboutus {
-		padding-top: 82px;
+		padding-top: 42px;
 		.fas {
 			font-size: 40px;
 		}
@@ -117,7 +117,7 @@ main {
 		color: $main-color;
 	}
 	.portfolio {
-		padding-top: 82px;
+		padding-top: 42px;
 		.carousel-item {
 			position: relative;
 			height: 600px;
@@ -134,7 +134,7 @@ main {
 		}
 	}
 	.prices {
-		padding-top: 82px;
+		padding-top: 42px;
 		.price-box {
 			width: 300px;
 			height: 400px;
@@ -148,6 +148,9 @@ main {
 			}
 			.material-symbols-outlined {
 				font-size: 24px;
+			}
+			h2 {
+				padding-top: 82px;
 			}
 			h3 {
 				color: $main-color;
@@ -183,6 +186,7 @@ main {
 		}
 	}
 	.team {
+		padding-top: 42px;
 		position: relative;
 		background-image: url('../img/office-space-1988480_1920.jpg');
 		background-size: cover;
@@ -240,6 +244,7 @@ main {
 	}
 
 	.achievements {
+		padding-top: 42px;
 		span {
 			font-size: 48px;
 			color: $white-color;
@@ -251,6 +256,7 @@ main {
 		}
 	}
 	.contact {
+		padding-top: 32px;
 		position: relative;
 		background-image: url('../img/warsaw-961357_640.jpg');
 		background-size: cover;
@@ -329,9 +335,6 @@ main {
 			margin: auto;
 		}
 	}
-	// .mobile-img {
-	// 	display: none;
-	// }
 }
 
 .scrollToTop {
