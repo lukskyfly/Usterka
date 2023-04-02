@@ -288,7 +288,7 @@ main .team .card-group {
   display: flex;
   flex-wrap: wrap;
 }
-main .achievements {
+main .achievements h2 {
   padding-top: 42px;
 }
 main .achievements span {
